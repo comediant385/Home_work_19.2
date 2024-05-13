@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 NULLABLE = {'null': True, 'blank': True}
 
 
@@ -24,6 +25,7 @@ class Product(models.Model):
     price = models.FloatField(verbose_name='Цена за покупку')
     created_at = models.DateTimeField(default=timezone.now, verbose_name='Дата создания (записи в БД)')
     updated_at = models.DateTimeField(default=timezone.now, verbose_name='Дата последнего изменения (записи в БД)')
+
 
 
     class Meta:
